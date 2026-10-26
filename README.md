@@ -52,6 +52,6 @@ Die acht Tests prüfen die reinen URL-/Bildformat-Hilfsfunktionen, einschließli
 - [Sicherheits- und Vertrauensmodell](docs/SECURITY.md).
 - [SHA-256-Dateimanifest](MANIFEST.sha256).
 
-Das Hauptprodukt bleibt privat. Dieses eigenständige Showcase enthält weder vollständigen Anwendungscode noch Repository-Historie oder Betriebskonfiguration. Vorgesehener öffentlicher Repositoryname: **yannikberner-AI-PM/movur-showcase**; diese Dokumentation behauptet keine erfolgte Veröffentlichung.
+Das Hauptprodukt bleibt privat. Dieses eigenständige Showcase enthält weder vollständigen Anwendungscode noch die private Repository-Historie oder Betriebskonfiguration. Das Showcase ist unter **[yannikberner-AI-PM/movur-showcase](https://github.com/yannikberner-AI-PM/movur-showcase)** öffentlich veröffentlicht; der Standardbranch ist **main**. Die Veröffentlichung dieses Repositories ist keine Produktionsfreigabe der movur-Anwendung.
 
 Kontakt: info@movur.app.
