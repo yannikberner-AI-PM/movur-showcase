@@ -1,57 +1,63 @@
-# movur — öffentliches Showcase
+# movur: public showcase
 
-**Visuell denken, mit Daten rechnen, Zusammenhänge bearbeiten.**
+**English** | [Deutsch](README.de.md)
 
-Annahmen, Kennzahlen und Entscheidungen verteilen sich oft auf Whiteboards, Tabellen, Dokumente und Browser-Tabs. movur verbindet ein frei organisierbares Board mit typisierten Daten und Berechnungen: Inhalte und Zusammenhänge bleiben in einem bearbeitbaren Modell.
+**Think visually, calculate with data, and edit the connections.**
 
-## Für wen?
+Assumptions, metrics, and decisions often end up scattered across whiteboards, spreadsheets, documents, and browser tabs. movur combines a freely organised board with typed data and calculations, keeping content and its relationships in one editable model.
 
-Für Privatnutzer, Einzelpersonen und Solo-Selbstständige ebenso wie für Teams in KMU und größeren Unternehmen — insbesondere Sales, Marketing, Product, Support und Softwareentwicklung. Funnel- und Budgetmodelle, Kampagnenplanung, Produkt-Roadmaps und Supportabläufe sind Anwendungsfelder, keine Zusage bereits integrierter Unternehmenssysteme.
+## Who is it for?
 
-## Status: vorhanden, lokal und geplant
+Individuals and solo business owners as well as teams in small, medium-sized, and larger companies, particularly sales, marketing, product, support, and software development. Funnel and budget models, campaign planning, product roadmaps, and support workflows are use cases, not a claim of existing enterprise-system integrations.
 
-**v0.1.0 ist das vorbereitete Release-Ziel, kein hier nachgewiesener veröffentlichter Versionsstand.** Dieses Showcase ist eine kuratierte technische Ansicht, nicht die vollständige Anwendung und kein Deployment-Nachweis.
+## Status: implemented, local, and planned
 
-| Einordnung | Umfang |
+**v0.1.0 is the prepared release target, not a published version demonstrated here.** This showcase is a curated technical view, not the complete application or evidence of deployment.
+
+| Classification | Scope |
 | --- | --- |
-| Im dokumentierten Editor implementiert | Boards, Vorlagen, Cards mit typisierten Attributen/Formeln, strukturierende Frames und Kalenderdarstellung, Verbindungen, Freihand, Auswahl, Verschieben, Größenänderung und Undo/Redo. |
-| Implementierte Datenwege | Validierte native Board- und Git-Historien-JSON-Importe, Dateien/Bilder, private Account-Workspaces mit serverseitigem Speichern. Git-Import ist keine Live-Synchronisierung. |
-| Neuere lokale Entwicklung, nicht in den Bildern belegt | Rich-Text-Auswahlformatierung, überarbeitete Texteingabe, einheitliche Formeleingabe mit Board-Referenzauswahl sowie Datum/Zeitraum als Kartenattribute. Daraus folgt keine Veröffentlichung. |
-| Ziel v1.0.0, noch keine ausgelieferte KI-Produktfunktion | Text, Sprache und strukturierte Daten zu editierbaren Boards; kontrollierte KI-Änderungen und nachvollziehbare Quellen. Siehe [KI-Roadmap](docs/AI_ROADMAP.md). |
+| Implemented in the documented editor | Boards, templates, cards with typed attributes and formulas, organising frames and a calendar view, connections, freehand drawing, selection, moving, resizing, and undo/redo. |
+| Implemented data paths | Validated native board and Git-history JSON imports, files and images, and private account workspaces with server-side storage. Git import is not live synchronisation. |
+| More recent local development, not evidenced by these images | Rich-text selection formatting, revised text input, unified formula input with board-reference selection, and date/date-range card attributes. This does not establish publication. |
+| v1.0.0 target, not yet a shipped AI product feature | Text, voice, and structured data turned into editable boards; controlled AI changes and traceable sources. See the [AI roadmap, in German](docs/AI_ROADMAP.md). |
 
-Keine vollständige Excel-/BPMN-Kompatibilität, keine Echtzeit-Zusammenarbeit und keine allgemein verfügbaren CRM-/KI-Provider-Connectoren. Datei- oder CSV/TSV-Vorschauen sind keine vollständigen strukturierten Geschäftsimporte. Corporate als Zielgruppe bedeutet keine Enterprise-, Compliance- oder Skalierungsfreigabe.
+No full Excel or BPMN compatibility, real-time collaboration, or generally available CRM or AI-provider connectors. File or CSV/TSV previews are not complete structured business-data imports. Including larger companies as a target audience does not establish enterprise readiness, compliance, or scalability approval.
 
-## Echte Anwendung, synthetische Daten
+## Real application, synthetic data
 
-![Board-Übersicht mit synthetischen Beispielen](docs/screenshots/board-overview.png)
+![Board overview with synthetic examples](docs/screenshots/board-overview.png)
 
-![Funnel-A/B-Vergleich im Board-Editor](docs/screenshots/board-editor.png)
+A board overview showing synthetic example content.
 
-Die Bilder stammen aus einem tatsächlich gerenderten älteren lokalen Build, nicht aus einem Design-Mockup und nicht aus einem aktuellen Produktivdeployment. [Bildherkunft und Grenzen](docs/screenshots/README.md).
+![Funnel A/B comparison in the board editor](docs/screenshots/board-editor.png)
 
-## Technik und ausgewählte Originalauszüge
+A funnel A/B comparison in the editable board.
 
-React, TypeScript und Vite; eigener Editor und eigene Formelengine; Clerk für Anmeldung, Cloudflare Pages/Functions und D1 für Account-Workspaces. [Architektur](docs/ARCHITECTURE.md) beschreibt Zuständigkeiten und Datenfluss.
+The images come from an older, actually rendered local build, not a design mockup or a current production deployment. The application UI remains in its original language. [Image provenance and limitations, in German](docs/screenshots/README.md).
 
-Zwei kleine, unveränderte TypeScript-Dateien illustrieren URL-Metadaten und Bilddatenvalidierung. Sie sind **proprietäre Originalauszüge zur Ansicht und technischen Bewertung**, kein Open-Source-SDK, keine vollständige Importpipeline und keine lauffähige Anwendung. [Komponenten und Codeherkunft](components/README.md).
+## Technology and selected original excerpts
 
-### Auszüge prüfen
+React, TypeScript, and Vite; a custom editor and formula engine; Clerk for sign-in; Cloudflare Pages/Functions and D1 for account workspaces. The [architecture documentation, in German](docs/ARCHITECTURE.md) describes responsibilities and data flow.
 
-Mit Node.js ab 22.18, ohne externe Pakete oder Zugangsdaten:
+Two small, unchanged TypeScript files illustrate URL metadata and image-data validation. They are **proprietary original excerpts for inspection and technical evaluation**, not an open-source SDK, a complete import pipeline, or a runnable application. [Components and code provenance, in German](components/README.md).
+
+### Check the excerpts
+
+Requires Node.js 22.18 or later, with no external packages or credentials:
 
 ```bash
 npm test
 ```
 
-Die acht Tests prüfen die reinen URL-/Bildformat-Hilfsfunktionen, einschließlich ungültiger Eingaben und der Grenzen einer Formatprüfung. Sie ersetzen keine Browserprüfung von FileReader oder einen Test der vollständigen Anwendung.
+The eight tests check the pure URL/image-format helpers, including invalid inputs and the limits of format validation. They do not replace browser testing of FileReader or testing of the complete application.
 
-## Rechte, Vertrauen und Geschäftsmodell
+## Rights, trust, and business model
 
-- [LICENSE](LICENSE): eigene Texte, Bilder und Komponenten bleiben proprietär; keine MIT-/CC-Lizenz.
-- [Geschäftsmodell](docs/BUSINESS_MODEL.md): kostenlose öffentliche Beta als Ziel, auch für Privatnutzer; spätere Monetarisierung offen.
-- [Sicherheits- und Vertrauensmodell](docs/SECURITY.md).
-- [SHA-256-Dateimanifest](MANIFEST.sha256).
+- [LICENSE](LICENSE): original text, images, and components remain proprietary; no MIT or CC licence.
+- [Business model, in German](docs/BUSINESS_MODEL.md): a free public beta is the target, including for individuals; later monetisation remains open.
+- [Security and trust model, in German](docs/SECURITY.md).
+- [SHA-256 file manifest](MANIFEST.sha256).
 
-Das Hauptprodukt bleibt privat. Dieses eigenständige Showcase enthält weder vollständigen Anwendungscode noch die private Repository-Historie oder Betriebskonfiguration. Das Showcase ist unter **[yannikberner-AI-PM/movur-showcase](https://github.com/yannikberner-AI-PM/movur-showcase)** öffentlich veröffentlicht; der Standardbranch ist **main**. Die Veröffentlichung dieses Repositories ist keine Produktionsfreigabe der movur-Anwendung.
+The main product remains private. This standalone showcase contains neither the complete application code nor the private repository history or operational configuration. The showcase is publicly available at **[yannikberner-AI-PM/movur-showcase](https://github.com/yannikberner-AI-PM/movur-showcase)**; its default branch is **main**. Publishing this repository does not constitute production approval for the movur application.
 
-Kontakt: info@movur.app.
+Contact: info@movur.app.
